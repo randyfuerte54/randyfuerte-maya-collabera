@@ -35,14 +35,15 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
           language.transactionHistory,
-          style: GoogleFonts.poppins(
-            fontStyle: FontStyle.normal,
-            color: AppColors.primaryColor,
-          ).copyWith(
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
+          style: Theme.of(context).textTheme.displayMedium,
+          // GoogleFonts.poppins(
+          //   fontStyle: FontStyle.normal,
+          //   color: AppColors.primaryColor,
+          // ).copyWith(
+          //   fontSize: 18.0,
+          //   fontWeight: FontWeight.w600,
+          //   color: Colors.white,
+          // ),
         ),
       ),
       body: BlocBuilder<TransactionHistoryBloc, TransactionHistoryState>(

@@ -42,14 +42,9 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
           language.sendMoney,
-          style: GoogleFonts.poppins(
-            fontStyle: FontStyle.normal,
-            color: AppColors.primaryColor,
-          ).copyWith(
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-            color: Colors.white,
-          ),
+          style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                fontWeight: FontWeight.w500,
+              ),
         ),
       ),
       body: BlocConsumer<SendMoneyBloc, SendMoneyState>(
@@ -131,12 +126,10 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
       ],
       autovalidateMode: AutovalidateMode.onUserInteraction,
       cursorColor: AppColors.primaryColor,
-      style: GoogleFonts.poppins(
-        textStyle: Theme.of(context).textTheme.headlineMedium,
-        color: AppColors.black,
-        fontWeight: FontWeight.w500,
-        fontSize: 14.0,
-      ),
+      style: Theme.of(context).textTheme.displaySmall?.copyWith(
+            color: AppColors.black,
+            fontWeight: FontWeight.w500,
+          ),
       validator: (value) {
         if (value.toString().isEmpty) {
           return language.requiredField;
@@ -163,19 +156,14 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
           ),
         ),
         labelText: language.amount,
-        labelStyle: GoogleFonts.poppins(
-          textStyle: Theme.of(context).textTheme.headlineMedium,
-          color: AppColors.black,
-          fontWeight: FontWeight.w500,
-          fontSize: 14.0,
-        ),
+        labelStyle: Theme.of(context).textTheme.displaySmall?.copyWith(
+              color: AppColors.black,
+              fontWeight: FontWeight.w500,
+            ),
         hintText: '0.00',
-        hintStyle: GoogleFonts.poppins(
-          textStyle: Theme.of(context).textTheme.headlineMedium,
-          color: AppColors.black,
-          fontWeight: FontWeight.w500,
-          fontSize: 14.0,
-        ),
+        hintStyle: Theme.of(context).textTheme.displaySmall?.copyWith(
+              color: AppColors.black,
+            ),
         fillColor: AppColors.white.withOpacity(0.1),
         filled: true,
       ),
@@ -216,11 +204,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
       },
       child: Text(
         language.submit,
-        style: const TextStyle(
-          color: Colors.white,
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
+        style: Theme.of(context).textTheme.titleMedium,
       ),
     );
   }

@@ -108,12 +108,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
         children: [
           Text(
             language.walletBalance,
-            style: GoogleFonts.poppins(
-              fontStyle: FontStyle.normal,
-              color: AppColors.black,
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-            ),
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                  color: AppColors.black,
+                  fontWeight: FontWeight.bold,
+                ),
           ),
           const Spacer(),
           SpacedRow(
@@ -123,12 +121,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 'Php ${dashboardState.isHidden ? Helpers().concealString(
                     amount: balance,
                   ) : balance}',
-                style: GoogleFonts.poppins(
-                  fontStyle: FontStyle.normal,
-                  color: AppColors.black,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
+                style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                      color: AppColors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
               ),
               InkWell(
                 onTap: () {
@@ -185,12 +181,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
       child: Text(
         language.sendMoney,
-        style: GoogleFonts.poppins(
-          fontStyle: FontStyle.normal,
-          color: Colors.white,
-          fontWeight: FontWeight.w600,
-          fontSize: 14,
-        ),
+        style: Theme.of(context).textTheme.displaySmall,
       ),
     );
   }
@@ -220,12 +211,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
       child: Text(
         language.transactionHistory,
-        style: GoogleFonts.poppins(
-          fontStyle: FontStyle.normal,
-          color: Colors.white,
-          fontWeight: FontWeight.w600,
-          fontSize: 14,
-        ),
+        style: Theme.of(context).textTheme.displaySmall,
       ),
     );
   }

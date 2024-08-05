@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:randy_fuerte_technical_assessment/core/theme/app_colors.dart';
 import 'package:randy_fuerte_technical_assessment/features/dashboard/presentation/blocs/bloc/dashboard_bloc.dart';
 import 'package:randy_fuerte_technical_assessment/features/dashboard/presentation/screens/dashboard_screen.dart';
@@ -54,6 +55,26 @@ class _SendMoneyAppState extends State<SendMoneyApp> {
             ),
             colorScheme: ColorScheme.fromSwatch().copyWith(
               secondary: AppColors.black,
+            ),
+            textTheme: TextTheme(
+              displayMedium: GoogleFonts.poppins(
+                fontStyle: FontStyle.normal,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
+              titleMedium: GoogleFonts.poppins(
+                fontStyle: FontStyle.normal,
+                fontSize: 16.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
+              displaySmall: GoogleFonts.poppins(
+                fontStyle: FontStyle.normal,
+                fontSize: 14.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
             ),
           ),
           debugShowCheckedModeBanner: false,
