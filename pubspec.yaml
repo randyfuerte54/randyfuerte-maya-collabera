@@ -1,0 +1,39 @@
+name: randy_fuerte_technical_assessment
+description: "Technical Assessment for Maya-Collabera"
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  mockito: ^5.4.4
+  intl: ^0.18.0
+  intl_utils: ^2.8.7
+  flutter_bloc: ^8.1.6
+  page_transition: ^2.1.0
+  equatable: ^2.0.5
+  http: ^1.2.2
+  google_fonts: ^6.2.1
+  bloc_test: ^9.1.7
+  build_runner: ^2.4.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  test: ^1.24.9
+
+flutter:
+  uses-material-design: true
+
+flutter_intl:
+  enabled: true

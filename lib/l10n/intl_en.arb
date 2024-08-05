@@ -1,0 +1,16 @@
+{
+  "sendMoney": "Send Money",
+  "transactionHistory": "Transaction History",
+  "somethingWentWrongPleaseTryAgainLater": "Something went wrong! Please try again later.",
+  "amount": "Amount",
+  "requiredField": "Required field",
+  "pleaseEnterNumbersOnly": "Please enter numbers only.",
+  "insufficientBalance": "Insufficient Balance",
+  "submit": "Submit",
+  "success": "Success",
+  "transferSuccess": "Transfer Success",
+  "date": "Date : ",
+  "transactionId": "Transaction ID :",
+  "walletBalance": "Wallet Balance",
+  "noTransactionHistory": "No transaction history"
+}
